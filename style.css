@@ -1,105 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-@charset "utf-8";
-/***
-    The new CSS reset - version 1.8.5 (last updated 14.6.2023)
-    GitHub page: https://github.com/elad2412/the-new-css-reset
-***/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/*
-    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
-    - The "symbol *" part is to solve Firefox SVG sprite bug
-    - The "html" attribute is exclud, because otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
- */
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-    all: unset;
-    display: revert;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    font-family: 'Inter', sans-serif;
+	vertical-align: baseline;
 }
-
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-/* Reapply the pointer cursor for anchor tags */
-a, button {
-    cursor: revert;
+body {
+	line-height: 1;
 }
-
-/* Remove list styles (bullets/numbers) */
-ol, ul, menu {
-    list-style: none;
+ol, ul {
+	list-style: none;
 }
-
-/* For images to not be able to exceed their container */
-img {
-    max-inline-size: 100%;
-    max-block-size: 100%;
+blockquote, q {
+	quotes: none;
 }
-
-/* removes spacing between cells in tables */
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
 table {
-    border-collapse: collapse;
-}
-
-/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input, textarea {
-    -webkit-user-select: auto;
-}
-
-/* revert the 'white-space' property for textarea elements on Safari */
-textarea {
-    white-space: revert;
-}
-
-/* minimum style to allow to style meter element */
-meter {
-    -webkit-appearance: revert;
-    appearance: revert;
-}
-
-/* preformatted text - use only for this feature */
-:where(pre) {
-    all: revert;
-}
-
-/* reset default text opacity of input placeholder */
-::placeholder {
-    color: unset;
-}
-
-/* remove default dot (•) sign */
-::marker {
-    content: initial;
-}
-
-/* fix the feature of 'hidden' attribute.
-   display:revert; revert to element instead of attribute */
-:where([hidden]) {
-    display: none;
-}
-
-/* revert for bug in Chromium browsers
-   - fix for the content editable attribute will work properly.
-   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element */
-:where([contenteditable]:not([contenteditable="false"])) {
-    -moz-user-modify: read-write;
-    -webkit-user-modify: read-write;
-    overflow-wrap: break-word;
-    -webkit-line-break: after-white-space;
-    -webkit-user-select: auto;
-}
-
-/* apply back the draggable feature - exist only in Chromium and Safari */
-:where([draggable="true"]) {
-    -webkit-user-drag: element;
-}
-
-/* Revert Modal native behavior */
-:where(dialog:modal) {
-    all: revert;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* main css */
@@ -107,7 +55,7 @@ meter {
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #FFF;
+    /* color: #FFF; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,14 +65,14 @@ body {
     display: flex;
     flex-direction: column;
     border: 5px solid salmon;
-    background: linear-gradient(63deg, #040006 -1.16%, #62005F 112.81%);
+    /* background: linear-gradient(63deg, #040006 -1.16%, #62005F 112.81%); */
     width: 1280px;
     height: 832px; 
     /* margin: auto; */
 }
 
 #header-container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     /* justify-content: center; */
     justify-content: space-between;
@@ -152,3 +100,80 @@ body {
     display: flex;
     gap: 9px
 } 
+
+#page-container {
+    /* border: 5px solid red; */
+    display: flex;
+    flex: 1 1 1px;
+}
+
+#left-container, #right-container {
+    flex: 1;
+    border: 5px solid green;
+    
+}
+
+#left-container  {
+    width: 516px;
+    padding-left: 100px;
+}
+
+#info-box {
+    /* border: 5px solid rebeccapurple; */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 51px;
+}
+
+#info-top   {
+    /* border: 5px solid yellowgreen; */
+    margin-top: 115px;
+}
+
+#info-top > h2{
+    /* font-family: Inter; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+    background: linear-gradient(101deg, #FD7452 18.7%, #FF4265 102.73%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#info-top > h3 {
+    /* color: #FFF; */
+    
+    font-family: Inter;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 28px;
+    margin-bottom: 24px;
+}
+
+#info-top > p {
+    width: 496px;
+    height: 48px;
+    /* color: #FFF; */
+    /* font-family: Inter; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+#info-top >h3 > span {
+    background: linear-gradient(121deg, #FD653D 28.54%, #FF4167 68.18%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
