@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -142,7 +141,7 @@ table {
 
 body {
     font-family: 'Inter', sans-serif;
-    /* color: #FFF; */
+    color: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,8 +150,8 @@ body {
 #main-container {
     display: flex;
     flex-direction: column;
-    border: 5px solid salmon;
-    /* background: linear-gradient(63deg, #040006 -1.16%, #62005F 112.81%); */
+    /* border: 5px solid salmon; */
+    background: linear-gradient(63deg, #040006 -1.16%, #62005F 112.81%);
     width: 1280px;
     height: 832px;
     /* margin: auto; */
@@ -169,24 +168,76 @@ body {
     /* flex-direction: column; */
 }
 
-#nav-left {
-    display: flex;
-    gap: 8px
+
+#nav-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 188px;
 }
 
-#nav-menu {
+#nav-wrap-left {
     display: flex;
-}
-
-#nav-menu>ul {
-    display: flex;
+    align-items: flex-end;
     gap: 55px;
 }
 
-#contacts-container>ul {
-    display: flex;
-    gap: 9px
+#nav-wrap-left>h5>img {
+    width: 13.649px;
+    height: 12.754px;
+    transform: rotate(7.822deg);
+    flex-shrink: 0;
 }
+
+#nav-wrap-right {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+#nav-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#nav-wrap-left>h5 {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+}
+
+#nav-wrap-left>h5>span {
+    font-weight: 600;
+}
+
+#logo-3 {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-wrap-right>h5 {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    /* 175% */
+}
+
+#nav-wrap-right>img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+
+
 
 #page-container {
     /* border: 5px solid red; */
@@ -197,7 +248,7 @@ body {
 #left-container,
 #right-container {
     flex: 1;
-    border: 5px solid green;
+    /* border: 5px solid green; */
 
 }
 
@@ -233,7 +284,7 @@ body {
 }
 
 #info-top>h3 {
-    /* color: #FFF; */
+    color: #FFF;
 
     font-family: Inter;
     font-size: 52px;
@@ -247,7 +298,7 @@ body {
 #info-top>p {
     width: 496px;
     height: 48px;
-    /* color: #FFF; */
+    color: #FFF;
     /* font-family: Inter; */
     font-size: 16px;
     font-style: normal;
@@ -306,7 +357,7 @@ button>img {
 }
 
 #btn-container>a {
-    /* color: #FFF; */
+    color: #FFF;
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
@@ -348,7 +399,7 @@ button>img {
 #exp-b {
     width: 284px;
     height: 48px;
-    /* color: #FFF; */
+    color: #FFF;
     /* font-family: Inter; */
     font-size: 14px;
     font-style: normal;
@@ -400,4 +451,34 @@ button>img {
     /* background-color: lightgray;
     background-size: cover;
     background-repeat: no-repeat; */
+}
+
+
+#right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#right-wrap {
+    width: 516px;
+    height: 636px;
+    flex-shrink: 0;
+    border-radius: 240px 240px 0px 0px;
+    background: linear-gradient(31deg, #140119 1.55%, #5B0E4E 88.54%);
+    box-shadow: 0px 4px 250px 0px rgba(255, 201, 62, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#dog {
+
+    /* z-index: 100; */
+    width: 513px;
+    height: 513px;
+    flex-shrink: 0;
+    background: url(images/dog.png);
+    /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+
 }
