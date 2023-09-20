@@ -154,6 +154,7 @@ body {
     background: linear-gradient(63deg, #040006 -1.16%, #62005F 112.81%);
     width: 1280px;
     height: 832px;
+    position: relative;
     /* margin: auto; */
 }
 
@@ -167,6 +168,7 @@ body {
     padding-bottom: 0px;
     /* flex-direction: column; */
 }
+
 
 
 #nav-wrap {
@@ -200,6 +202,21 @@ body {
     gap: 8px;
 }
 
+#nav-left>h1 {
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 127.273% */
+}
+
+#nav-left>img {
+    width: 26.108px;
+    height: 25.452px;
+    transform: rotate(4.678deg);
+}
+
 #nav-wrap-left>h5 {
     color: #FFF;
     font-size: 16px;
@@ -207,6 +224,10 @@ body {
     font-weight: 400;
     line-height: 28px;
     /* 175% */
+}
+
+#nav-wrap-left>h5:hover {
+    cursor: pointer;
 }
 
 #nav-wrap-left>h5>span {
@@ -247,13 +268,13 @@ body {
 
 #left-container,
 #right-container {
-    flex: 1;
+    /* flex: 1; */
     /* border: 5px solid green; */
 
 }
 
 #left-container {
-    width: 516px;
+    /* width: 516px; */
     padding-left: 100px;
 }
 
@@ -455,6 +476,7 @@ button>img {
 
 
 #right-container {
+    margin-right: 134px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -475,10 +497,84 @@ button>img {
 #dog {
 
     /* z-index: 100; */
+    /* z-index: 5; */
     width: 513px;
     height: 513px;
     flex-shrink: 0;
     background: url(images/dog.png);
     /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
 
+}
+
+#dogo-wraper {
+    /* position: relative; */
+}
+
+#dogo1 {
+    width: 57px;
+    height: 57px;
+    flex-shrink: 0;
+    border-radius: 57px;
+    border: 3px solid #BA92A7;
+    /* background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9; */
+    background: url(icons/dogo1.svg);
+    position: absolute;
+    top: 664px;
+    left: 607px;
+    /* top: 664px;
+    right: 607px; */
+    /* background-position: top 100px center; */
+}
+
+#dogo2 {
+    width: 67.614px;
+    height: 67.614px;
+    transform: rotate(-1.256deg);
+    flex-shrink: 0;
+    border-radius: 67.614px;
+    border: 3px solid #BA92A7;
+    /* background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9; */
+    background: url(icons/dogo2.svg);
+    position: absolute;
+    top: 335px;
+    left: 601.89px;
+}
+
+#dogo3 {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 52px;
+    border: 3px solid #BA92A7;
+    /* background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9; */
+    background: url(icons/dogo3.svg);
+    position: absolute;
+    top: 134px;
+    left: 672px;
+}
+
+#dogo4 {
+    width: 86px;
+    height: 86px;
+    flex-shrink: 0;
+    border-radius: 86px;
+    border: 3px solid #BA92A7;
+    /* background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9; */
+    background: url(icons/dogo4.svg);
+    position: absolute;
+    top: 172px;
+    left: 890px;
+}
+
+#dogo5 {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 80px;
+    border: 3px solid #BA92A7;
+    /* background: url(<path-to-image>), lightgray 50% / cover no-repeat, #D9D9D9; */
+    background: url(icons/dogo5.svg);
+    position: absolute;
+    top: 100px;
+    left: 1100px;
 }
