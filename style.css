@@ -226,7 +226,10 @@ body {
     /* 175% */
 }
 
-#nav-wrap-left>h5:hover {
+#nav-wrap-left>h5:hover,
+#nav-wrap-right>h5:hover,
+#nav-wrap-right>div:hover,
+button {
     cursor: pointer;
 }
 
